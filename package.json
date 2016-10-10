@@ -1,0 +1,28 @@
+{
+  "name": "sample_node",
+  "version": "0.1.0",
+  "description": "sample_node",
+  "main": "hello-world-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivienzi/sample_node.git"
+  },
+  "keywords": [
+    "node.js",
+    "eclipse",
+    "nodeclipse"
+  ],
+  "author": "Vivien",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/vivienzi/sample_node/issues"
+  },
+  "homepage": "https://github.com/vivienzi/sample_node#readme"
+}

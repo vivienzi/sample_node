@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Express module</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="http://127.0.0.1:8085/js/angular_script.js"></script>
+	</head>
+	<body ng-app="my_app">
+		<div ng-controller="my_cntrl">
+			<div>
+				<a href="#" id="list_user" ng-click="list_users()">List users</a> &nbsp;
+			</div>
+			<br /><br />
+			<table id="user_list" border="1" style="border-collapse:collapse;width:100%;display:none;"" cellpadding="5">
+				<tr>
+					<th style="width:18%">Name</th>
+					<th style="width:18%">Email</th>
+					<th style="width:18%">Age</th>
+					<th style="width:18%">Phone</th>
+					<th style="width:18%">Location</th>
+					<th></th>
+				</tr>
+				<tr ng-repeat="user_info in user_list">
+					<td>{{user_info.name}}</td>
+					<td>{{user_info.email}}</td>
+					<td>{{user_info.age}}</td>
+					<td>{{user_info.phone}}</td>
+					<td>{{user_info.location}}</td>
+					<td><a href="#" ng-click="delete_user(user_info._id)">Delete user</a></td>
+				</tr>
+				
+				<tr id="add_user_button" style="display:none">
+				    <td colspan="6" style="text-align:center"><a href="#" id="add_user" ng-click="show_add_form()">Add user</a></td>
+				</tr>
+							    
+				<tr  id="input_user_info" style="display:none;">
+					<td>
+						<input type="text" name="username" ng-model="username" placeholder="Please enter name" />
+					</td>
+					<td>
+						<input type="text" name="email" ng-model="email" placeholder="Please enter email" />
+					</td>
+					<td>
+						<input type="text" name="age" ng-model="age" placeholder="Please enter age" />
+					</td>
+					<td>
+						<input type="text" name="phone" ng-model="phone" placeholder="Please enter phone" />
+					</td>
+					<td>
+						<input type="text" name="location" ng-model="location" placeholder="Please enter location" />
+					</td>
+					<td>
+						<input type="button" value="Save user" name="save_user" ng-click="save_user_data()" />
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
