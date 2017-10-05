@@ -1,14 +1,22 @@
 
 
 # sample_node
-
-
+I start this project in an attemp to collect user information include name, email, phone, via AngularJS and store them into MongoDB. 
 
 ## Usage
+```cd sample_node```
 
+```npm install```
+
+```npm start ```
 
 
 ## Developing
+AngularJS
+
+MongoDB
+
+Node.js
 
 
 
